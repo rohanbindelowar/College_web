@@ -1,0 +1,370 @@
+nav {
+    box-shadow: 0px 0px 7px gray;
+    margin: 5px;
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 999;
+}
+
+.image h5 {
+    position: absolute;
+    left: 100px;
+    text-align: center;
+    width: 500px;
+    top: 7px;
+    background: #ebebeb;
+    padding: 10px;
+    border-radius: 100px;
+    z-index: 2;
+
+}
+
+nav button {
+    border: 1px solid #d4d4d4;
+    padding: 10px;
+    opacity: 80%;
+    margin: 5px 10px;
+    width: 100px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px #dbdbdb
+}
+
+nav button:hover {
+    background: #979797;
+    color: white
+}
+
+.image img {
+
+    width: 55px;
+    border-radius: 100%;
+    opacity: 95%;
+    margin-top: 1px
+}
+
+.image {
+    float: left;
+    display: flex;
+}
+
+header .bg-image {
+    height: 700px;
+    margin-top: 5px;
+    z-index: -3;
+    background: url(https://wallpapercave.com/wp/wp4720655.jpg);
+    background-position: top;
+    background-size: cover;
+    background-blend-mode: soft-light;
+    background-repeat: no-repeat;
+    filter: blur(0.5px)
+}
+
+.bg-text {
+
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 1px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 70%;
+    padding: 30px;
+    text-align: center;
+}
+
+article {
+    margin: 10px;
+    float: right;
+    width: 60%;
+    padding: 20px
+}
+
+aside {
+    margin-top: 40px;
+    padding: 40px;
+
+    width: 38%;
+    height: 448px
+}
+
+.divider {
+    margin: 10px;
+    border-bottom: 4px dotted #b6b6b6
+}
+
+.divider-sm {
+    width: 100%;
+    margin-bottom: 20px;
+    border-bottom: 1px solid gray;
+}
+
+.basic {
+    text-align: justify;
+    padding: 5px 10px
+}
+
+.car {
+    border-left: 1px solid gray
+}
+
+tr:hover {
+    background: #e3e3e3
+}
+
+input:not(.btn) {
+    display: block;
+    width: 70%;
+    margin: 10px auto;
+    opacity: 100%;
+    color: black;
+    border: 1px solid gray;
+    padding: 4px;
+}
+
+.btn {
+    display: block;
+    border-radius: 30px;
+    width: 50%;
+    padding: 5px;
+    margin: 10px auto
+}
+
+.log {
+    width: 80%;
+}
+
+.anc i {
+    font-size: 30px;
+    margin: 10px auto;
+}
+
+footer {
+    background: gray;
+    height: 100px;
+    margin-top: 40px;
+    z-index: 1;
+    padding-top: 32px;
+
+}
+
+.open {
+    position: fixed;
+    background: url(https://wallpaperaccess.com/full/4446627.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    z-index: 999;
+    width: 60%;
+    height: 60%;
+    margin: 0 20%;
+    animation-name: fun;
+    animation-duration: 10s;
+    animation-delay: 0s;
+    text-align: center;
+
+}
+
+@keyframes fun {
+    10% {
+        left: -300px;
+        top: 10px;
+    }
+
+    25% {
+        left: 300px;
+        top: 10px;
+    }
+
+    50% {
+        left: 300px;
+        top: 300px;
+    }
+
+    75% {
+        left: -300px;
+        top: 300px;
+    }
+
+    100% {
+        left: -300px;
+        top: 10px;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 1000px) {
+
+    nav h5 {
+        display: none
+    }
+
+    article {
+        width: 100%
+    }
+
+    footer {
+        position: relative;
+        top: 400px
+    }
+
+    aside {
+        display: block;
+        width: 100%
+    }
+
+    .bg-text {
+
+        background-color: rgba(0, 0, 0, 0.5);
+        /* Black w/opacity/see-through */
+        color: white;
+        font-weight: bold;
+        border: 1px solid #f1f1f1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        width: 70%;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .open {
+        position: fixed;
+        background: url(https://wallpaperaccess.com/full/4446627.jpg);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        z-index: 999;
+        width: 60%;
+        height: 60%;
+        margin: 0 20%;
+        animation-name: fun;
+        animation-duration: 7s;
+        animation-delay: 0s;
+        text-align: center;
+
+    }
+
+    @keyframes fun {
+        1% {
+            width: 600px;
+            left: -150px;
+            top: 0px;
+        }
+
+        10% {
+            width: 600px;
+            left: -150px;
+            top: 0px;
+        }
+
+        25% {
+            left: -150px;
+            top: 300px;
+        }
+
+        50% {
+            left: -150px;
+            top: 0px;
+        }
+
+        75% {
+            left: -150px;
+            top: 300px;
+        }
+
+        100% {
+            width: 600px;
+            left: -150px;
+            top: 0px;
+        }
+
+
+    }
+	
+	.col table{
+		display: none
+	}
+
+	.my-2{
+		font-size: 18px
+	}
+	.col span:not(.pa){
+		font-size: 15px
+	}
+	.accordion:nth-child(1){
+		margin-top: -10px
+	}
+	.stu img{
+		width: 30px; 
+	}
+
+}
+
+/*about section*/
+.col{
+    text-align: center;
+    margin: 20px
+}
+
+
+.fi {
+    margin: 0 30%;
+    text-align: center
+}
+.row img{
+    border-radius: 20px  
+}
+.sec {
+    margin: 20px 9%;
+    text-align: center;
+}
+
+.col img{
+    width: 50%;
+    margin: 10px 5%;
+}
+
+a{
+    text-decoration: none;
+    color: black
+}
+.card-header:hover{
+    background: #eeeeee;
+}
+.accordion {
+  background-color: #e7e7e7;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: 1px solid;
+  outline: none;
+  transition: 0.4s;
+	
+	border-radius: 10px
+}
+.accordion:hover{
+	background: #d0d0d0;
+}
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s ease-out;
+}
+.later{
+	height: 500px;
+	margin-top: 200px
+}
